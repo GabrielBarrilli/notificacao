@@ -6,7 +6,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: gbdacruztecnologia@gmail.com
-    password: pzmt nspl vooj irie
+    password: pzmtnsplvoojirie
     protocol: smtp
     properties:
       mail:
@@ -26,8 +26,8 @@ spring:
 
 envio:
   email:
-    remetente: 'GB da Cruz Tecnologia'
-    nomeRemetente: 'Sistema de Notificações - Gabriel Barrilli'
+    remetente: 'gbdacruztecnologia@gmail.com'
+    nomeRemetente: "Sistema de Notificações - Gabriel Barrilli"
 
 server:
   port: 8082

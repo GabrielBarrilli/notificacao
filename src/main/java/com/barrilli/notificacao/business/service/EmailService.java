@@ -1,9 +1,8 @@
-package com.barrilli.notificacao.business;
+package com.barrilli.notificacao.business.service;
 
 import com.barrilli.notificacao.business.dto.TarefasDTO;
 import com.barrilli.notificacao.infra.exception.EmailException;
 import jakarta.mail.MessagingException;
-import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;

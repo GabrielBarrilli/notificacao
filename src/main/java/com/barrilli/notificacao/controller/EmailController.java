@@ -1,6 +1,6 @@
 package com.barrilli.notificacao.controller;
 
-import com.barrilli.notificacao.business.EmailService;
+import com.barrilli.notificacao.business.service.EmailService;
 import com.barrilli.notificacao.business.dto.TarefasDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
