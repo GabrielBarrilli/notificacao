@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: notificacao
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gbdacruztecnologia@gmail.com
+    password: pzmt nspl vooj irie
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          port: 465
+          class: javax.net.ssl.SSLSocketFactory
+          fallback: false
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+  thymeleaf:
+    enabled: true
+
+envio:
+  email:
+    remetente: 'GB da Cruz Tecnologia'
+    nomeRemetente: 'Sistema de Notificações - Gabriel Barrilli'
+
+server:
+  port: 8082
