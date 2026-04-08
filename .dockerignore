@@ -1,0 +1,15 @@
+.git
+.gitignore
+.gradle
+build
+.idea
+.env
+.env.*
+!.env.example
+Dockerfile
+**/build
+**/.idea
+**/.gradle
+**/*.iml
+**/*.ipr
+**/*.iws

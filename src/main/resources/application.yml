@@ -3,31 +3,31 @@ spring:
     name: notificacao
 
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username:
-    password:
-    protocol: smtp
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    protocol: ${MAIL_PROTOCOL:smtp}
     properties:
       mail:
         smtp:
-          auth: true
+          auth: ${MAIL_SMTP_AUTH:true}
           starttls:
-            enable: true
-          port: 465
+            enable: ${MAIL_STARTTLS_ENABLE:true}
+          port: ${MAIL_SSL_PORT:465}
           class: javax.net.ssl.SSLSocketFactory
-          fallback: false
-          connectiontimeout: 5000
-          timeout: 3000
-          writetimeout: 5000
+          fallback: ${MAIL_SSL_FALLBACK:false}
+          connectiontimeout: ${MAIL_CONNECTION_TIMEOUT:5000}
+          timeout: ${MAIL_TIMEOUT:3000}
+          writetimeout: ${MAIL_WRITE_TIMEOUT:5000}
 
   thymeleaf:
     enabled: true
 
 envio:
   email:
-    remetente:
-    nomeRemetente: "Sistema de Notificações - Gabriel Barrilli"
+    remetente: ${EMAIL_REMETENTE:no-reply@example.com}
+    nomeRemetente: ${EMAIL_REMETENTE_NOME:Sistema de Notificacoes}
 
 server:
   port: 8082

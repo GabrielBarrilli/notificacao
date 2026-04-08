@@ -1,7 +1,7 @@
-FROM gradle:7.5-jdk17 as build
+FROM gradle:8.7-jdk17 as build
 WORKDIR /app
 COPY . .
-RUN gradle build --no-daemon
+RUN gradle clean bootJar --no-daemon --stacktrace
 
 FROM eclipse-temurin:17-jdk-alpine
 
