@@ -49,7 +49,7 @@ public class EmailService {
             javaMailSender.send(message);
 
         } catch (MessagingException | UnsupportedEncodingException e) {
-            throw new EmailException("Erro ao enviar email de notificação", e.getCause());
+            throw new EmailException("Erro ao enviar email de notificação", e);
         }
     }
 }
